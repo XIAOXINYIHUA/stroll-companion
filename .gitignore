@@ -1,0 +1,11 @@
+build/
+.hvigor/
+.idea/
+oh_modules/
+node_modules/
+*.p12
+*.p7b
+*.cer
+*.csr
+private.pem
+public.pem

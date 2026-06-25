@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>散步伴侣 — 隐私政策</title>
+    <style>
+        :root {
+            --primary: #1B5E3A;
+            --accent: #34C759;
+            --text: #1a1a2e;
+            --text-secondary: #555;
+            --bg: #f8faf9;
+            --card-bg: #ffffff;
+            --border: #e0e8e4;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 40px 48px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #1B5E3A, #34C759);
+            margin: 0 auto 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            color: white;
+        }
+        h1 { font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+        .version { color: var(--text-secondary); font-size: 14px; }
+        h2 {
+            font-size: 18px;
+            color: var(--primary);
+            margin: 32px 0 12px;
+            padding-left: 12px;
+            border-left: 3px solid var(--accent);
+        }
+        h3 { font-size: 15px; color: #333; margin: 16px 0 8px; }
+        p, li { color: var(--text-secondary); font-size: 15px; margin-bottom: 8px; }
+        ul { padding-left: 20px; margin-bottom: 12px; }
+        li { margin-bottom: 4px; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .badge {
+            display: inline-block;
+            background: #e8f5e9;
+            color: var(--primary);
+            padding: 2px 10px;
+            border-radius: 100px;
+            font-size: 12px;
+            font-weight: 600;
+            margin: 0 4px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            color: #999;
+            font-size: 13px;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 24px 20px; border-radius: 0; }
+            h1 { font-size: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🌿</div>
+            <h1>散步伴侣 隐私政策</h1>
+            <p class="version">生效日期：2026年6月25日 · 版本 1.0</p>
+        </header>
+
+        <p>散步伴侣（以下简称"本应用"）由个人开发者开发运营。我们高度重视您的隐私保护。本隐私政策说明了我们如何收集、使用和保护您的信息。</p>
+
+        <h2>一、信息收集</h2>
+        <p>我们<strong>不收集</strong>任何个人信息。本应用仅在本地设备处理以下数据：</p>
+
+        <h3>1. 位置信息</h3>
+        <p>用于获取您当前所在区域的天气和空气质量数据，并推荐附近散步路线。<strong>位置数据仅在应用运行时在本地使用，不会上传至任何服务器。</strong></p>
+
+        <h3>2. 网络请求</h3>
+        <p>本应用通过 HTTPS 协议向 <a href="https://open-meteo.com" target="_blank">Open-Meteo</a> 公开 API 获取天气和空气质量数据。请求中仅包含经纬度坐标和时区信息，<strong>不包含任何个人身份信息</strong>。</p>
+
+        <h2>二、信息存储</h2>
+        <p>所有用户数据（包括但不限于散步记录、偏好设置）均存储在您的设备本地，使用 HarmonyOS <span class="badge">Preferences</span> 本地存储机制。</p>
+        <p>我们<strong>不会</strong>将您的任何数据收集、存储或传输至远程服务器。</p>
+
+        <h2>三、信息共享</h2>
+        <p>我们<strong>不会</strong>向任何第三方出售、共享或披露您的个人信息。因为我们根本不收集它们。</p>
+
+        <h2>四、第三方服务</h2>
+        <p>本应用仅使用以下第三方公开服务：</p>
+        <ul>
+            <li><strong>Open-Meteo</strong>（<a href="https://open-meteo.com" target="_blank">open-meteo.com</a>）：免费开源天气与空气质量数据 API，无需 API Key，不追踪用户。</li>
+            <li><strong>华为位置服务</strong>（Huawei Location Kit）：华为 HMS Core 提供，仅在本地获取设备位置。</li>
+        </ul>
+        <p>您可查阅 Open-Meteo 的 <a href="https://open-meteo.com/en/terms" target="_blank">服务条款</a> 了解更多。</p>
+
+        <h2>五、权限使用</h2>
+        <p>本应用申请以下系统权限，均仅用于核心功能：</p>
+        <ul>
+            <li><span class="badge">位置</span> <code>LOCATION</code> + <code>APPROXIMATELY_LOCATION</code>：获取当前位置以推荐附近散步路线。</li>
+            <li><span class="badge">网络</span> <code>INTERNET</code>：获取天气和空气质量数据。</li>
+        </ul>
+        <p>您可随时在系统设置中撤回这些权限。撤回后相关功能将不可用，但不影响其他功能。</p>
+
+        <h2>六、数据安全</h2>
+        <p>由于本应用不收集或传输用户数据至任何服务器，不存在用户数据泄露、丢失或滥用的风险。所有数据仅存储在您的设备中，受 HarmonyOS 系统级安全保护。</p>
+
+        <h2>七、儿童隐私</h2>
+        <p>本应用不针对 13 岁以下儿童设计。我们不会故意收集儿童的个人信息。如果您是家长或监护人，发现您的孩子向我们提供了个人信息，请联系我们，我们将删除相关信息。</p>
+
+        <h2>八、隐私政策更新</h2>
+        <p>我们可能会不时更新本隐私政策。更新后的政策将在本页面公布，并更新"生效日期"。建议您定期查阅本页面以了解变更。</p>
+
+        <h2>九、联系我们</h2>
+        <p>如对本隐私政策或本应用有任何疑问、建议或反馈，请通过以下方式联系我们：</p>
+        <ul>
+            <li>📧 邮箱：<a href="mailto:strollcompanion@outlook.com">strollcompanion@outlook.com</a></li>
+            <li>💬 应用内：通过"我的" → "关于"页面联系</li>
+        </ul>
+
+        <footer>
+            <p>© 2026 散步伴侣 Stroll Companion. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
